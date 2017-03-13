@@ -14,11 +14,11 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^spec/}) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'rspec'
+  spec.add_development_dependency 'rspec', '3.5.0'
 
-  spec.add_dependency 'faraday'
-  spec.add_dependency 'faraday_middleware'
-  spec.add_dependency 'json'
-  spec.add_dependency 'hashie'
-  spec.add_dependency 'uuidtools'
+  spec.add_dependency 'faraday', '0.11.0'
+  spec.add_dependency 'faraday_middleware', '0.11.0.1'
+  spec.add_dependency 'json', '2.0.3'
+  spec.add_dependency 'hashie', '3.5.5'
+  spec.add_dependency 'uuidtools', '2.1.5'
 end
