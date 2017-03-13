@@ -1,0 +1,8 @@
+Metrics/LineLength:
+  Max: 99
+Style/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+Style/EmptyLinesAroundModuleBody:
+  EnforcedStyle: empty_lines
+DisplayCopNames: true
+DisplayStyleGuide: true
