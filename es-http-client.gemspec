@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'es-http-client'
-  spec.version       = '0.1.0'
+  spec.version       = '0.1.1'
   spec.licenses      = ['MIT']
   spec.authors       = ['Kevin Rutherford']
   spec.email         = ['kevin@rutherford-software.com']
@@ -22,3 +22,4 @@ Gem::Specification.new do |spec|
   spec.add_dependency 'hashie', '3.5.5'
   spec.add_dependency 'uuidtools', '2.1.5'
 end
+

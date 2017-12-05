@@ -28,7 +28,6 @@ module EsHttpClient
       true
     rescue EsHttpClientError => e
       STDERR.puts e.message
-      STDERR.puts e.backtrace
       false
     end
 
@@ -39,3 +38,4 @@ module EsHttpClient
   end
 
 end
+
