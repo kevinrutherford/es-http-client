@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = 'es-http-client'
-  spec.version       = '0.1.1'
+  spec.version       = '0.1.2'
   spec.licenses      = ['MIT']
   spec.authors       = ['Kevin Rutherford']
   spec.email         = ['kevin@rutherford-software.com']
@@ -14,12 +14,13 @@ Gem::Specification.new do |spec|
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^spec/}) }
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'rspec', '3.5.0'
+  spec.add_development_dependency 'rspec', '~> 3.5'
 
-  spec.add_dependency 'faraday', '0.11.0'
-  spec.add_dependency 'faraday_middleware', '0.11.0.1'
-  spec.add_dependency 'json', '2.0.3'
-  spec.add_dependency 'hashie', '3.5.5'
-  spec.add_dependency 'uuidtools', '2.1.5'
+  spec.add_runtime_dependency 'faraday', '~> 0.13'
+  spec.add_runtime_dependency 'faraday_middleware', '~> 0.12'
+  spec.add_runtime_dependency 'hashie', '~> 3.5'
+  spec.add_runtime_dependency 'json', '~> 2.1'
+  spec.add_dependency 'uuidtools', '~> 2.1'
+
 end
 
