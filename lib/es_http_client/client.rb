@@ -9,8 +9,12 @@ module EsHttpClient
       @connection = connection
     end
 
+    def resource(id)
+      WriteableStream.new(id, @connection)
+    end
+
     def stream(type, id)
-      WriteableStream.new("#{type}-#{id}", @connection)
+      resource("#{type}-#{id}")
     end
 
     def all_events
@@ -20,3 +24,4 @@ module EsHttpClient
   end
 
 end
+
